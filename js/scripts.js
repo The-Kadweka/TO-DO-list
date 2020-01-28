@@ -1,11 +1,13 @@
-document.getElementById('add').addEventListener('click', add);
-show();
+function getItem(){
+    var li = document.getItem('li');
+    var theInputValue = document.getElementById("the-input").nodeValue;
+    var textNode = document.createTextNode(theInputValue);
+    li.appendChild.textNode;
 
-function get_todos() {
-    var todos = new Array;
-    var todos_str = localStorage.getItem('todo');
-    if (todos_str != null) {
-        todos = JSON.parse(todos_str); 
+    if(theInputValue === ''){
+        alert('input a text')
+    }else{
+        document.getElementById('the-ul').appendChild(li);
     }
-    return todos;
+   
 }
