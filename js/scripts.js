@@ -33,3 +33,13 @@ clearBtn.addEventListener('click', function(){
   ul.innerHTML= "";
   localStorage.removeItem('todoList',ul.innerHTML );
 });
+
+//function to delete todo if delete span is clicked.
+function deleteTodo(){
+  for(let span of spans){
+    span.addEventListener ("click",function (){
+      span.parentElement.remove();
+      event.stopPropagation();
+    });
+  }
+}
