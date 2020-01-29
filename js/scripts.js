@@ -1,28 +1,9 @@
-var closeButton = document.getElementsByClassName("close");
+//selecting dom elements for manipulation
+var input = document.querySelector("input[type = 'text']");
+var ul = document.querySelector("ul");
+var container = document.querySelector("div");
+var lists = document.querySelectorAll("li");
+var spans = document.getElementsByTagName("span");
+var saveBtn = document.querySelector(".save");
+var clearBtn = document.querySelector(".clear");
 
-
-
-function  createNewElement(){
-    var li = document.createNewElement('li');
-    var theInputValue = document.getElementById("the-input").nodeValue;
-    var textNode = document.createTextNode(theInputValue);
-    li.appendChild.textNode;
-
-    if(theInputValue === ''){
-        alert('input a text')
-    }else{
-        document.getElementById('the-ul').appendChild(li);
-    }
-    var thePanTag = document.createNewElement("SPAN");
-    var text = document.createTextNode("U007")
-    thePanTag.className = "close";
-    thePanTag.appendChild(text);
-    li.appendChild(thePanTag);
-    
-
-    for(i = 0; i< closeButton.length; i++){
-        closeButton[i].onclick =  function(){
-            theDiv.style.display = "none";
-        }
-    }
-}
