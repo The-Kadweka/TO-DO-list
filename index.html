@@ -21,17 +21,20 @@
 <body>
 <!-- Default form subscription -->
 <!-- Default input -->
-<div id = "todo">
-  <h1> MY TO-DO LISTs</h1>
-<!-- Large input -->
-<input class="form-control form-control-lg" type="text" placeholder="What do you want to do ..............">
-  <ul class="todos">
-      <li><span><i class="fas fa-trash-alt"></i></span>Go to the salon</li>
-  </ul>
-  <div id= "buttons">
-      <button type="button" class="btn btn-outline-primary btn-rounded clear waves-effect">Clear All</button>
-  </div>
-</div>
+<div class="main">
+      <h1>TO-DO LIST</h1>
+      <form class="" action="index.html" method="post">
+        <input type="text" placeholder="Your activity here.........." name="task">
+        <button  type="submit"><strong>ADD</strong></button>
+      </form>
+      <div class="tasksBoard">
+        <ul>
+          <li><span class="delete">×</span><input type="checkbox"><label>Vanilla JavaScript</label></li>
+          
+        </ul>
+        <a id="clear">Clear</a>
+      </div>
+    </div>
 <!-- Default form subscription -->
     <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
