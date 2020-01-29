@@ -27,3 +27,9 @@ input.addEventListener("keypress",function(keyPressed){
     }
     
 });
+
+//clear all todo when clear button is clicked
+clearBtn.addEventListener('click', function(){
+  ul.innerHTML= "";
+  localStorage.removeItem('todoList',ul.innerHTML );
+});
